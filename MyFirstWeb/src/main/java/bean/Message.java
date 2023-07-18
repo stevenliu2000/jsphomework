@@ -4,7 +4,14 @@ public class Message {
     private String author;
     private String title;
     private String content;
-
+    
+//    public Message() {
+//    	
+//    }
+//    public Message (String author, String title, String content) {
+//    	
+//    }
+    
     public String getAuthor() {
         return author;
     }
@@ -28,4 +35,5 @@ public class Message {
     public void setContent(String content) {
         this.content = content;
     }
+    
 }

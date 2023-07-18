@@ -12,7 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MessageServlet extends HttpServlet {
-    private List<Message> messages;
+	
+	private List<Message> messages = new ArrayList<>();
+
 
     @Override
     public void init() throws ServletException {
@@ -20,6 +22,7 @@ public class MessageServlet extends HttpServlet {
         messages = new ArrayList<>();
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("messages", messages);
         getServletContext().setAttribute("messages", messages);

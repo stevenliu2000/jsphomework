@@ -21,10 +21,10 @@ public class AddMessageServlet extends HttpServlet {
         message.setTitle(title);
         message.setContent(content);
 
-        // Add message to the list
         List<Message> messages = (List<Message>) getServletContext().getAttribute("messages");
         messages.add(message);
 
         response.sendRedirect("messages");
     }
 }
+
