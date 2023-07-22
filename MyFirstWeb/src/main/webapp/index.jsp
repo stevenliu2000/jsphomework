@@ -1,14 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>留言板</title>
 </head>
 <body>
  <h1>留言板</h1>
- <form action="MessageServlet" method="get">
+ <form action="MessageServlet" method="post">
   <label for="name">填寫者:</label> <input type="text" name="name" required><br>
   <label for="title">標題:</label> <input type="text" name="title" required><br> 
   <label for="content">內容:</label><br>
@@ -17,3 +15,5 @@
  </form>
 </body>
 </html>
+<!--  預設網址 -->
+<!--  http://localhost:8080/MyFirstWeb/ -->
