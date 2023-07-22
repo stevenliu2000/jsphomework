@@ -1,28 +1,37 @@
 package bean;
 
 public class Message {
-    private String author;
+    private String name;
     private String title;
     private String content;
 
-    public String getAuthor() {
-        return author;
+    public Message() {
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public Message(String name, String title, String content) {
+        this.name = name;
+        this.title = title;
+        this.content = content;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public String getContent() {
         return content;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void setContent(String content) {
