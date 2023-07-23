@@ -42,24 +42,6 @@ public class MessageServlet extends HttpServlet {
         
         // 導向到顯示留言的JSP
         request.getRequestDispatcher("showMessages.jsp").forward(request, response);
-    
-        
-        // 傳送回應給客戶端
-//        response.setContentType("text/html;charset=UTF-8"); // 設定回應的Content-Type為HTML並使用UTF-8編碼
-//        PrintWriter out = response.getWriter();
-//        out.println("<!DOCTYPE html>");
-//        out.println("<html>");
-//        out.println("<head>");
-//        out.println("<meta charset=\"UTF-8\">");
-//        out.println("<title>收到留言</title>");
-//        out.println("</head>");
-//        out.println("<body>");
-//        out.println("<h1>收到留言</h1>");
-//        out.println("<p>填寫者：" + name + "</p>");
-//        out.println("<p>標題：" + title + "</p>");
-//        out.println("<p>內容：" + content + "</p>");
-//        out.println("</body>");
-//        out.println("</html>");
        }
 
 }
