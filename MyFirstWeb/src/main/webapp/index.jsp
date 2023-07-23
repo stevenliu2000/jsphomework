@@ -12,6 +12,10 @@
   <label for="content">內容:</label><br>
   <textarea name="content" rows="4" cols="50" required></textarea>
   <br> <input type="submit" value="新增留言">
+  
+ </form>
+ <form action="showMessage.jsp">
+ <input type="submit" value="查看留言"> 
  </form>
 </body>
 </html>
