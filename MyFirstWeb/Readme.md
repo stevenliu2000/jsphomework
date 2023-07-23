@@ -1,9 +1,10 @@
 #這個是這段程式的Readme
 ##第一部分 新增了index.jsp的檔案
-#### 這個是一開始進入網頁會進入到的頁面 網址是：http://localhost:8080/MyFirstWeb/
-#### 我將新增留言的頁面html寫在這裡，並且也大致了解jsp有一點類似網頁的html但有一些語法不太一樣
-#### 再來就是去讓新增可以導向另外一個頁面showMessage.jsp，在這裡我有使用	arraylist去將message 的資料以list的方式收集起來
-#### 因為一開始使用兩個servlet溝通上出現一些問題，所以我先將檔案簡化，將一個一個步驟分開來，下方就是我先簡化的方式
+這個是一開始進入網頁會進入到的頁面 網址是：http://localhost:8080/MyFirstWeb/
+我將新增留言的頁面html寫在這裡，並且也大致了解jsp有一點類似網頁的html但有一些語法不太一樣
+再來就是去讓新增可以導向另外一個頁面showMessage.jsp，在這裡我有使用	arraylist去將message 的資料以list的方式收集起來
+因為一開始使用兩個servlet溝通上出現一些問題，所以我先將檔案簡化，將一個一個步驟分開來，下方就是我先簡化的方式
+
 ``` Messageservlet.java // 傳送回應給客戶端
 //        response.setContentType("text/html;charset=UTF-8"); // 設定回應的Content-Type為HTML並使用UTF-8編碼
 //        PrintWriter out = response.getWriter();
