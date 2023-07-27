@@ -11,7 +11,12 @@ public class Message {
         this.content = content;
     }
 
-    public String getName() {
+    @Override
+	public String toString() {
+		return "Message [name=" + name + ", title=" + title + ", content=" + content + "]";
+	}
+
+	public String getName() {
         return name;
     }
 

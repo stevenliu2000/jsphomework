@@ -17,17 +17,17 @@
 
 	</form>
 
-	<form action="showMessages.jsp" method="post" id="showMessagesForm">
+	<form action="TestMessageShow" method="Get" id="showMessagesForm">
 		<input type="submit" value="查看所有留言">
 	</form>
 
-	<script>
+	<!-- <script>
 		document.getElementById("showMessagesForm").addEventListener("submit",
 				function(event) {
 					event.preventDefault();  /* 阻止表單的默認提交行為 */ 
 					window.location.href = "showMessages.jsp"; /* 使用JavaScript進行導向 */ 
 				});
-	</script>
+	</script> -->
 
 
 	<button type="button" onclick="clearFields()">清除欄位</button>

@@ -9,6 +9,7 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
   <servlet>
         <servlet-name>MessageServlet</servlet-name>
         <servlet-class>com.MyFirstWeb.MessageServlet</servlet-class>
@@ -16,5 +17,14 @@
     <servlet-mapping>
         <servlet-name>MessageServlet</servlet-name>
         <url-pattern>/MessageServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>TestMessageShow</servlet-name>
+        <servlet-class>com.MyFirstWeb.TestMessageShow</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestMessageShow</servlet-name>
+        <url-pattern>/TestMessageShow</url-pattern>
     </servlet-mapping>
 </web-app>
