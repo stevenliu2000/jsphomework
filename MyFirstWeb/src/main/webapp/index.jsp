@@ -17,7 +17,7 @@
 
 	</form>
 
-	<form action="TestMessageShow" method="Get" id="showMessagesForm">
+	<form action="MessageServlet" method="Get" id="showMessagesForm">
 		<input type="submit" value="查看所有留言">
 	</form>
 

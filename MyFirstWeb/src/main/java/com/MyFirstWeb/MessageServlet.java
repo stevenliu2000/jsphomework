@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -44,4 +45,9 @@ public class MessageServlet extends HttpServlet {
         request.getRequestDispatcher("showMessages.jsp").forward(request, response);
        }
 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    	
+        request.setAttribute("messagesList", messages);
+        request.getRequestDispatcher("showMessages.jsp").forward(request, response);
+       }
 }
